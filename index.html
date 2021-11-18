@@ -5,46 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Grocery List</title>
+  <title>The Great To-Do List</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
   <header>
-    <h1 class="page-title">The Grocery List</h1>
-    <p>Click the button below to add a new grocery item to your list!</p>
+    <h1 class="page-title">The Great To-Do List</h1>
+    <p>Click the button below to add a new task to your list!</p>
     <form id="task-form">
 
       <div class="form-group">
-        <input type="text" name="task-name" placeholder="Enter Grocery Item" />
+        <input type="text" name="task-name" placeholder="Enter Task" />
       </div>
       
       <div class="form-group">
         <select name="task-type" class="select-dropdown">
-          <option value="" disabled selected>Pick a grocery type</option>
-          <option value="Breakfast">Breakfast</option>
-          <option value="Lunch">Lunch</option>
-          <option value="Snacks">Snacks</option>
-          <option value="Cleaning">Cleaning</option>
-          <option value="Personal Care">Personal Care</option>
+          <option value="" disabled selected>Pick a task type</option>
+          <option value="Web Dev">Web Dev</option>
+          <option value="Practice">Practice</option>
+          <option value="Assignmemt">Assignment</option>
+          <option value="Career Focus">Career Focus</option>
+          <option value="Supplemental Studies">Supplemental Studies</option>
         </select>
       </div>
+
       <div class="form-group">
         <button class="btn" id="save-task" type="submit">Add Item</button>
       </div>
     </form>
   </header>
 
+
   <main class="page-content">
     <section class="task-list-wrapper">
-      <h2 class="list-title">Grocery List</h2>
+      <h2 class="list-title">To-Do List</h2>
       <ul class="task-list" id="tasks-to-do"></ul>
     </section>
+
+    <!-- Tasks In Progress -->
+    <section class="task-list-wrapper">
+        <h2 class="list-title">Tasks In Progress</h2>
+        <ul class="task-list" id="tasks-in-progress"></ul>
+    </section>
+
+    <!-- Tasks Completed -->
+    <section class="task-list-wrapper">
+         <h2 class="list-title">Tasks Completed</h2>
+         <ul class="task-list" id="tasks-completed"></ul>
+    </section>
+
   </main>
 
   <footer>
-    &copy;2020 by The Grocery List
+    &copy;2020 by The Great To-Do List
   </footer>
 
   <script src="./assets/js/script.js"></script>
